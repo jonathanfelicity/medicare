@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\productcontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+route::resource("products",productcontroller::class);
